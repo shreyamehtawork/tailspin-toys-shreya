@@ -49,7 +49,13 @@ Refer to technology-specific instruction files:
 - Create reusable components for common UI patterns
 - Keep components focused on a single responsibility
 - Use props for configuration, not duplication
-- Document component APIs with TypeScript types
+- Document component APIs with a TSDoc comment on each reusable `.astro` component's `Props` interface, including the meaning of non-obvious props
+
+### Comments and Formatting
+
+- Comment the intent behind non-obvious UI decisions, accessibility workarounds, and interaction constraints; do not narrate markup or utility classes.
+- Keep comments current and remove them when the implementation no longer needs the explanation.
+- Use the repository's TypeScript formatting conventions: single quotes, semicolons, trailing commas in multiline literals, and spaces inside object braces. ESLint enforces these rules.
 
 ## Development Workflow
 
